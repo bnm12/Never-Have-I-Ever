@@ -1,0 +1,11 @@
+<div id="cardCarousel" class="carousel slide h-100" data-wrap="false" data-interval="false" (slide.bs.carousel)="slideEvent()">
+  <div class="carousel-inner h-100" role="listbox">
+    <div class="carousel-item h-100" [class.active]="first" *ngFor="let card of cards; let first = first">
+      <question-card [card]="card" class="w-100 h-100"></question-card>
+    </div>
+  </div>
+  <a class="carousel-control-next" href="#cardCarousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>

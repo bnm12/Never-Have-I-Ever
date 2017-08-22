@@ -141,7 +141,7 @@ export class InMemoryDataService implements InMemoryDbService {
       {
         id: 24,
         text: 'Stolen a car',
-        categories: Category.Illegal
+        categories: Category.Illegal | Category.Advanced
       },
       {
         id: 25,
